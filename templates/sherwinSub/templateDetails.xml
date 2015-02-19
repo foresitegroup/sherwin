@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="template">
+	<name>sherwin Sub</name>
+	<creationDate>6 15 2007</creationDate>
+	<author>Charles Bast</author>
+	<copyright>Remedi Creative </copyright>
+	<authorEmail>c.bast@remedicreative.com</authorEmail>
+	<authorUrl>http://www.remedicreative.com</authorUrl>
+	<version>1.0</version>
+	<description>CSS template for Sherwin </description>
+	<files>
+		<filename>index.php</filename>
+		<filename>template_thumbnail.png</filename>
+	</files>
+	<images>
+		<filename>../sherwin/images/about.gif</filename>
+		<filename>../sherwin/images/affilliates.gif</filename>
+		<filename>../sherwin/images/blank.gif</filename>
+		<filename>../sherwin/images/consulting.gif</filename>
+		<filename>../sherwin/images/contact.gif</filename>
+		<filename>../sherwin/images/head.jpg</filename>
+		<filename>../sherwin/images/menu.jpg</filename>
+		<filename>../sherwin/images/newProducts.jpg</filename>
+		<filename>../sherwin/images/products.gif</filename>
+		<filename>../sherwin/images/seeUs.gif</filename>
+		<filename>../sherwin/images/seeUs.jpg</filename>
+		<filename>../sherwin/images/smallBanner.jpg</filename>
+		<filename>../sherwin/images/productsLMenu.jpg</filename>
+
+		<filename>../sherwin/images/logoButton.swf</filename>
+	</images>
+	<css>
+		<filename>../sherwin/css/template_css.css</filename>
+
+	</css>
+</mosinstall>

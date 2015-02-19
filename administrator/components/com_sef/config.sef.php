@@ -1,0 +1,35 @@
+<?php
+$alwaysUseLang = "1";
+$enabled = "1";
+$replacement = "-";
+$pagerep = "-";
+$stripthese = ",|~|!|@|%|^|*|(|)|+|<|>|:|;|{|}|[|]|---|--|..";
+$suffix = ".html";
+$addFile = "index.php";
+$friendlytrim = "-|.";
+$pagetext = "%s";
+$langPlacement = "0";
+$lowerCase = "1";
+$showSection = "0";
+$showCat = "1";
+$useAlias = "0";
+$excludeSource = "0";
+$reappendSource = "0";
+$ignoreSource = "1";
+$appendNonSef = "1";
+$transitSlash = "1";
+$useCache = "1";
+$cacheSize = "1000";
+$cacheMinHits = "10";
+$translateNames = "1";
+$page404 = "0";
+$record404 = "0";
+$replacements = "Á|A, Â|A, Å|A, Ă|A, Ä|A, À|A, Ć|C, Ç|C, Č|C, Ď|D, É|E, È|E, Ë|E, Ě|E, Ì|I, Í|I, Î|I, Ï|I, Ĺ|L, Ń|N, Ň|N, Ñ|N, Ò|O, Ó|O, Ô|O, Õ|O, Ö|O, Ŕ|R, Ř|R, Š|S, Ś|O, Ť|T, Ů|U, Ú|U, Ű|U, Ü|U, Ý|Y, Ž|Z, Ź|Z, á|a, â|a, å|a, ä|a, à|a, ć|c, ç|c, č|c, ď|d, đ|d, é|e, ę|e, ë|e, ě|e, è|e, ì|i, í|i, î|i, ï|i, ĺ|l, ń|n, ň|n, ñ|n, ò|o, ó|o, ô|o, ő|o, ö|o, š|s, ś|s, ř|r, ŕ|r, ť|t, ů|u, ú|u, ű|u, ü|u, ý|y, ž|z, ź|z, ˙|-, ß|ss, Ą|A, µ|u, Ą|A, µ|u, ą|a, Ą|A, ę|e, Ę|E, ś|s, Ś|S, ż|z, Ż|Z, ź|z, Ź|Z, ć|c, Ć|C, ł|l, Ł|L, ó|o, Ó|O, ń|n, Ń|N";
+$predefined = array('0' => "com_frontpage",'1' => "com_login",'2' => "com_newsfeeds",'3' => "com_sef",'4' => "com_weblinks",'5' => "com_joomfish");
+$skip = array('0' => "com_poll");
+$nocache = array();
+$serverUpgradeURL = "http://www.artio.cz/updates/joomsef/upgrade.zip";
+$serverNewVersionURL = "http://www.artio.cz/updates/joomsef/version";
+$langDomain = array();
+$altDomain = null;
+?>

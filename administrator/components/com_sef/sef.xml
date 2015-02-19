@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="component">
+	<name>sef</name>
+	<author>Kanga Internet</author>
+	<creationDate>27th December 2007</creationDate>
+	<copyright>Kanga Internet</copyright>
+	<license>http://www.KangaInternet.com/remository/joomsef.html</license>
+	<authorEmail>info@KangaInternet.com</authorEmail>
+	<authorUrl>www.Kanga Internet.net</authorUrl>
+	<version>2.2.5</version>
+	<description>Kanga Internet JoomSEF rewrites Joomla! URLs to be Search Engine Friendly together advanced
+	URL editing options, such as metatags definitions. It integrates JoomFish support with
+	option of internationalized, multilingual URLs. The configuration is easy and straightforward.
+	Support for many further popular extensions is included!</description>
+	<install>
+		<queries>
+			<query>DROP TABLE IF EXISTS `#__redirection`</query>
+			<query>CREATE TABLE `#__redirection` (
+				`id` int(11) NOT NULL auto_increment,
+				`cpt` int(11) NOT NULL default '0',
+				`oldurl` varchar(255) NOT NULL,
+				`newurl` varchar(255) NOT NULL,
+				`Itemid` varchar(20) default NULL,
+				`metadesc` varchar(255) default '',
+				`metakey` varchar(255) default '',
+				`metatitle` varchar(255) default '',
+				`metalang` varchar(30) default '',
+				`metarobots` varchar(30) default '',
+				`metagoogle` varchar(30) default '',
+				`dateadd` date NOT NULL default '0000-00-00',
+				PRIMARY KEY  (`id`),
+  				KEY `oldurl` (`oldurl`),
+  				KEY `odkaz` (`newurl`, `Itemid`)
+				) TYPE=MyISAM;
+			</query>
+			<query>DROP TABLE IF EXISTS `#__sefexts`</query>
+			<query>CREATE TABLE `#__sefexts` (
+			  `id` int(11) NOT NULL auto_increment,
+  			`file` varchar(100) NOT NULL,
+  			`title` varchar(100) default NULL,
+  			`params` text,
+  			PRIMARY KEY  (`id`)
+				) TYPE=MyISAM;
+			</query>
+			<query>DROP TABLE IF EXISTS `#__sefmoved`</query>
+			<query>CREATE TABLE `#__sefmoved` (
+				`id` int(11) NOT NULL auto_increment,
+  			`old` varchar(255) NOT NULL,
+  			`new` varchar(255) NOT NULL,
+  			`lastHit` datetime NOT NULL default '0000-00-00 00:00:00',
+  			PRIMARY KEY  (`id`),
+  			KEY `old` (`old`)
+				) TYPE=MyISAM;
+			</query>
+			<query>INSERT INTO `#__sefexts` (`file`) VALUES
+			('com_alphacontent.xml'),
+			('com_banners.xml'),
+			('com_contact.xml'),
+			('com_content.xml'),
+			('com_docman.xml'),
+			('com_forum.xml'),
+			('com_frontpage.xml'),
+			('com_glossary.xml'),
+			('com_joomlaboard.xml'),
+			('com_mtree.xml'),
+			('com_newsfeeds.xml'),
+			('com_registration.xml'),
+			('com_remository.xml'),
+			('com_search.xml'),
+			('com_weblinks.xml');
+			</query>
+			<query>INSERT INTO `#__sefexts` (`file`, `params`) VALUES
+			('com_wrapper.xml', 'ignoreSource=0\nitemid=1\noverrideId=');
+			</query>
+			<query>DROP TABLE IF EXISTS `#__sefexttexts`</query>
+			<query>CREATE TABLE `#__sefexttexts` (
+			`id` int(11) NOT NULL auto_increment,
+  		`extension` varchar(100) NOT NULL,
+  		`name` varchar(100) NOT NULL,
+  		`value` varchar(100) NOT NULL,
+  		PRIMARY KEY  (`id`)
+			) TYPE=MyISAM;
+			</query>
+			<query>INSERT INTO `#__sefexttexts` (`extension`, `name`, `value`) VALUES
+			('com_mtree', '_MT_SEF_MYPAGE', 'mypage'),
+			('com_mtree', '_MT_SEF_FEATUREDLISTING', 'Featured Listing'),
+			('com_mtree', '_MT_SEF_NEWLISTING', 'New Listing'),
+			('com_mtree', '_MT_SEF_RECENTLYUPDATED', 'Recently Updated'),
+			('com_mtree', '_MT_SEF_MOSTFAVOURED', 'Most Favoured'),
+			('com_mtree', '_MT_SEF_POPULARLISTING', 'Popular listing'),
+			('com_mtree', '_MT_SEF_MOSTRATEDLISTING', 'Most Rated'),
+			('com_mtree', '_MT_SEF_TOPRATEDLISTING', 'Top Rated'),
+			('com_mtree', '_MT_SEF_MOSTREVIEWEDLISTING', 'Most Reviewed'),
+			('com_mtree', '_MT_SEF_OWNER', 'Owner'),
+			('com_mtree', '_MT_SEF_FAVOURITES', 'Favourites'),
+			('com_mtree', '_MT_SEF_REVIEWS', 'Reviews'),
+			('com_mtree', '_MT_SEF_SEARCH', 'Search'),
+			('com_mtree', '_MT_SEF_ADVSEARCH', 'AdvSearch'),
+			('com_mtree', '_MT_SEF_ADVSEARCH2', 'AdvSearchR'),
+			('com_mtree', '_MT_SEF_IMAGE', 'image'),
+			('com_mtree', '_MT_SEF_GALLERY', 'gallery'),
+			('com_mtree', '_MT_SEF_REVIEW', 'review'),
+			('com_mtree', '_MT_SEF_REPLYREVIEW', 'replyreview'),
+			('com_mtree', '_MT_SEF_REPORTREVIEW', 'reportreview'),
+			('com_mtree', '_MT_SEF_RATE', 'rate'),
+			('com_mtree', '_MT_SEF_RECOMMEND', 'recommend'),
+			('com_mtree', '_MT_SEF_CONTACT', 'contact'),
+			('com_mtree', '_MT_SEF_REPORT', 'report'),
+			('com_mtree', '_MT_SEF_CLAIM', 'claim'),
+			('com_mtree', '_MT_SEF_VISIT', 'visit'),
+			('com_mtree', '_MT_SEF_DELETE', 'delete'),
+			('com_mtree', '_MT_SEF_ADDLISTING', 'Add_Listing'),
+			('com_mtree', '_MT_SEF_ADDCATEGORY', 'Add_Category');
+			</query>
+		</queries>
+	</install>
+  	<installfile>install.sef.php</installfile>
+	<uninstall>
+		<queries>
+			<query>DROP TABLE IF EXISTS `#__redirection`</query>
+			<query>DROP TABLE IF EXISTS `#__sefexts`</query>
+			<query>DROP TABLE IF EXISTS `#__sefmoved`</query>
+			<query>DROP TABLE IF EXISTS `#__sefexttexts`</query>
+		</queries>
+	</uninstall>
+  	<uninstallfile>uninstall.sef.php</uninstallfile>
+	<files>
+		<filename>sef_ext/_com_example.txt</filename>
+		<filename>sef_ext/com_alphacontent.php</filename>
+		<filename>sef_ext/com_alphacontent.xml</filename>
+		<filename>sef_ext/com_banners.php</filename>
+		<filename>sef_ext/com_banners.xml</filename>
+		<filename>sef_ext/com_contact.php</filename>
+		<filename>sef_ext/com_contact.xml</filename>
+		<filename>sef_ext/com_content.php</filename>
+		<filename>sef_ext/com_content.xml</filename>
+		<filename>sef_ext/com_docman.php</filename>
+		<filename>sef_ext/com_docman.xml</filename>
+		<filename>sef_ext/com_forum.php</filename>
+		<filename>sef_ext/com_forum.xml</filename>
+		<filename>sef_ext/com_frontpage.php</filename>
+		<filename>sef_ext/com_frontpage.xml</filename>
+		<filename>sef_ext/com_joomlaboard.php</filename>
+		<filename>sef_ext/com_joomlaboard.xml</filename>
+		<filename>sef_ext/com_glossary.php</filename>
+		<filename>sef_ext/com_glossary.xml</filename>
+		<filename>sef_ext/com_remository.php</filename>
+		<filename>sef_ext/com_remository.xml</filename>
+		<filename>sef_ext/com_mtree.php</filename>
+		<filename>sef_ext/com_mtree.xml</filename>
+		<filename>sef_ext/com_newsfeeds.php</filename>
+		<filename>sef_ext/com_newsfeeds.xml</filename>
+		<filename>sef_ext/com_registration.php</filename>
+		<filename>sef_ext/com_registration.xml</filename>
+		<filename>sef_ext/com_search.php</filename>
+		<filename>sef_ext/com_search.xml</filename>
+		<filename>sef_ext/com_weblinks.php</filename>
+		<filename>sef_ext/com_weblinks.xml</filename>
+		<filename>sef_ext/com_wrapper.php</filename>
+		<filename>sef_ext/com_wrapper.xml</filename>
+		<filename>index.html</filename>
+		<filename>sef.php</filename>
+		<filename>joomsef.php</filename>
+		<filename>sef_ext.php</filename>
+		<filename>functions.php</filename>
+		<filename>sef.cache.php</filename>
+	</files>
+	<administration>
+		<menu>Kanga Internet JoomSEF</menu>
+		<files>
+			<filename>bots/joomsef_metabot.php</filename>
+			<filename>bots/joomsef_metabot.xml.tmp</filename>
+			<filename>installer/index.html</filename>
+			<filename>installer/installer.php</filename>
+			<filename>installer/sefext.class.php</filename>
+			<filename>installer/sefext.html.php</filename>
+			<filename>installer/sefext.php</filename>
+			<filename>installer/sefpatch.html.php</filename>
+			<filename>installer/sefpatch.php</filename>
+			<filename>installer/upgrade.php</filename>
+			<filename>language/czech.php</filename>
+			<filename>language/english.php</filename>
+			<filename>language/french.php</filename>
+			<filename>language/german-informal.php</filename>
+			<filename>language/german.php</filename>
+			<filename>language/italian.php</filename>
+			<filename>language/spanish.php</filename>
+			<filename>language/polish.php</filename>
+			<filename>admin.sef.html.php</filename>
+			<filename>admin.sef.php</filename>
+			<filename>config.sef.php</filename>
+			<filename>index.html</filename>
+			<filename>install.sef.php</filename>
+			<filename>joomsef_cpanel.php</filename>
+			<filename>readme.inc.html</filename>
+			<filename>sef.class.php</filename>
+			<filename>toolbar.sef.html.php</filename>
+			<filename>toolbar.sef.php</filename>
+			<filename>uninstall.sef.php</filename>
+			<filename>checksum.md5</filename>
+			<filename>signature.b64</filename>
+			<filename>contentelements/sefext.titles.xml</filename>
+			<filename>contentelements/sefext.texts.xml</filename>
+			<filename>contentelements/translationJSextensionFilter.php</filename>
+		</files>
+    <images>
+      <filename>images/box.png</filename>
+			<filename>images/config.png</filename>
+			<filename>images/custom.png</filename>
+			<filename>images/custom_del.png</filename>
+			<filename>images/docs.png</filename>
+			<filename>images/down.png</filename>
+			<filename>images/edit_f2.png</filename>
+			<filename>images/icon.png</filename>
+			<filename>images/install.png</filename>
+			<filename>images/logs.png</filename>
+			<filename>images/logs_del.png</filename>
+			<filename>images/support.png</filename>
+			<filename>images/uninstall.png</filename>
+			<filename>images/up.png</filename>
+			<filename>images/upgrade.png</filename>
+			<filename>images/urls.png</filename>
+			<filename>images/urls_del.png</filename>
+			<filename>images/cancel_f2.png</filename>
+			<filename>images/delete_f2.png</filename>
+			<filename>images/url_301.png</filename>
+			<filename>images/url_301_del.png</filename>
+    </images>
+	</administration>
+</mosinstall>

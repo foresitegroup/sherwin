@@ -1,0 +1,727 @@
+.clear
+	{
+	 clear:both;
+
+	}
+
+body
+	{
+	 background-color:#AAA19B;
+	 font-family:arial;
+	 color:#000;
+	 font-size:8pt;
+
+	}
+body a
+	{
+	 
+	 font-family:arial;
+	 color:#000;
+	 font-size:8pt;
+	 text-decoration:none;
+
+	}
+
+h1
+	{
+	 font-family:arial;
+	 font-size:18px;
+	 color:#5D5D5D
+
+	}
+
+img
+	{
+
+	border:0px;
+
+	}
+#top
+	{
+	 position:relative;
+	 width:720px;
+	 /*border:1px #000 solid;*/
+
+	}
+
+#float1
+	{
+	
+	 /*position:relative;*/
+	/*top:-180px;*/
+	/*left:-230px;*/
+	/*border:0px #000 solid;*/
+	position:absolute;
+	top:10px;
+	left:-20px;
+	 width:312px;
+	 z-index:900;
+	}
+
+#float2
+	{
+
+	 float:right;
+	 margin-right:20px;
+	 padding-bottom:3px;
+	 width:100px;
+	
+	 
+	 
+	 background-color:#C2B392;
+	 border-top:6px #fff solid;
+	 border-left:6px #fff solid;
+	 border-right:6px #fff solid;
+	}
+
+
+
+
+#float3,#float4
+	{
+
+	 float:right;
+	 margin-right:-6px;
+	 padding-bottom:3px;
+	 width:100px;
+	 font-weight:bold;
+	 text-align:center;
+	
+	 
+	 
+	 background-color:#C2B392;
+	 border-top:6px #fff solid;
+	 border-left:6px #fff solid;
+	 border-right:6px #fff solid;
+	}
+#float4
+	{
+	 width:150px;
+	 white-space: nowrap;
+	 padding:1 3px 3px 3px;
+
+	}
+  
+#float8 {
+  float:left;
+  margin-left:20px;
+  width:180px;
+  background-color:#C2B392;
+  border-top:6px #fff solid;
+  border-left:6px #fff solid;
+  border-right:6px #fff solid;
+  font-weight:bold;
+  white-space: nowrap;
+  padding:1px 3px 3px 3px;
+}
+
+.mainlevelcontact, mainlevelcontact a
+	{
+	 font-weight:bold;
+
+	}
+
+#bannerBack
+	{
+
+	 position:relative;
+	 background-color:#555;
+	 width:720px;
+	 left:3px;
+	 z-index:1;
+	 
+
+	 
+	}
+
+#banner
+	{
+	 position:relative;
+	 /*overflow:hidden;*/
+	 height:202px;
+	 left:-3px;
+	 top:-3px;
+	 /*padding:10px;*/
+	 
+	background-color:#eee;
+ 	border:6px #fff solid;
+
+	}
+
+#bannerImage
+	{
+	/*
+	 background-image:url('../images/head.jpg');
+	 width:706px;
+	 height:198px;
+	*/
+
+	}
+
+#mainBack
+	{
+ 	 top:10px;
+	 position:relative;
+	 background-color:#555;
+	 width:720px;
+	 left:3px;
+	 
+
+	}
+
+#main
+	{
+	 position:relative;
+	
+	
+	 /*height:750px;*/
+	 left:-3px;
+	 top:-3px;
+	/*background-color:#9F9887;*/
+	 background-color:#fff;
+ 	border:6px #fff solid;
+
+	}
+
+* html #main, * html #mainBack
+	{
+	 z-index:-1;
+	}
+
+* html #theMenu
+	{
+	position:relative;;
+	
+	}
+
+
+#wrapLeft
+	{
+	 float:left;
+	 width:233px;
+	 padding:0px;
+	 background-color:#fff;
+	
+	
+	}
+
+* html #wrapLeft
+	{
+	 
+	 margin:-6px 0px 3px -2px;
+	 border-left:1px solid #fff;
+	 
+	
+	}
+
+#lImage1 { /* New Products */
+  float: left;
+  border-top: 6px #fff solid;
+  background: #C3B392 url('../images/featuredProducts.jpg') no-repeat;
+  height: 315px;
+  width: 233px;
+}
+
+
+#lImage2 { /* See Us Here */
+  float: left;
+  border-top: 6px #fff solid;
+  /* border-bottom: 6px #fff solid;*/
+  background-image: url('../images/seeUs.jpg');
+  background-repeat: no-repeat;
+  height: 75px;
+  width: 233px;
+}
+
+#lImage2Bottom { /* See Us Here bottom image */
+  float: left;
+  margin: 0px 0 0 0;
+  /* border-bottom: 6px #fff solid; */
+  background-image: url('../images/seeUsBottom.jpg');
+  background-repeat: no-repeat;
+  height: 130px;
+  width: 233px;
+}
+
+
+#nothing
+	{
+	 float:left;
+	 font-size:0;
+	 background-color:#A59F8F;
+	 line-height:0;
+	 height:0px;
+	 padding:0px;
+	 margin:0px;
+	 visibility:hidden;
+	 width:233px;
+   border: 0px solid black;
+	}
+
+
+
+
+
+
+
+#image1Text
+	{
+	 float:left;
+	 margin-top:36px;
+	 text-align:left;
+	 padding-left:5px;
+	 width:190px;
+	 height:40px;
+	 font-size:11px! important;
+	 color:#000;
+	 /*border:1px solid #000;*/
+
+	}
+
+#image2TextHolder
+	{
+ 	float:left;
+	width:233px;
+	 
+	background-color:#9F9886;
+
+
+
+	}
+
+
+#image2Text
+	{
+	 float:right;
+	 margin:15px 2px 0px 0px;
+	 text-align:left;
+	
+	 width:150px;
+	 
+	 font-size:11px! important;
+	 color:#000;
+	 /*border:1px solid #000;*/
+
+	}
+
+#image2EventText
+	{
+	 float:left;
+	 margin:6px 0 0 6px;
+	 text-align:left;
+	
+	 width:200px;
+	 /*height:70px;*/
+	 
+	 font-size:11px! important;
+	 color:#000;
+	 /*border:1px dotted #fff;*/
+
+	}
+
+#content, #contentProduct
+	{
+	 float:left;
+	 padding-top:6px;
+	 padding-left:15px;
+	 
+	 width:440px;
+	 text-align:left;
+	 font-family:arial;
+	 font-size:11px;
+	 color:#555;
+	 /*border:solid 1px #000;*/
+ 	 
+	 
+	 background-color:#fff;
+
+	}
+
+
+* html #content
+	{
+	 
+	 margin-top:-6px;
+	 padding-left:10px;
+	 width:475px;
+	 padding-right:30px;
+	 
+	
+	}
+
+#contentProduct
+	{
+
+	 width:480px;
+
+	}
+
+
+* html #contentProduct
+	{
+	 
+	 margin-top:-3px;
+	 padding-left:10px;
+	width:495px;
+	 padding-right:30px;
+	 
+	
+	}
+
+
+.contentpaneopen
+	{
+	 margin-top:-5px;
+	 font-size:11px;
+	 color:#555;
+
+	}
+
+
+
+#strecher
+	{
+	 float:right;
+	 width:0px;
+	 height:422px;
+	 padding:0px;
+	 margin:0px;
+	 border:0px #000 solid;
+	 
+	}
+* html #strecher
+	{
+	height:407px;
+	margin:0 0 0 0;
+	}
+
+
+#footer
+	{
+	/* padding-top:6px;*/
+
+ 	 text-align:right;
+	 padding-right:5px;
+	 font-family:arial;
+	 color:#fff;
+	 font-size:11px;
+	 line-height:18px; 
+	 background-color:#808178;
+	 width: 703px;
+ 	 /*height:50px;*/
+	 /* border-top:6px #fff solid; */
+	 border-bottom:0px #fff solid;
+	}
+
+
+.moduletablefooter table td, .moduletablefooter table td a
+	{
+ 	 text-align:right;
+	 
+	 font-family:arial;
+	 color:#ddd;
+	 font-size:11px;
+	 text-decoration:none;
+
+
+
+
+	}
+
+.redText
+	{
+	 font-family:arial;
+	 color:e00;
+
+	}
+
+
+#productsCom
+	{
+	 float:left;
+	 width:190px;
+	 text-align:left;
+	 padding-left:10px;
+
+	 margin:6px 0 0 0px ;
+	 background-color:#C2B392;
+	 padding-bottom:8px;
+	}
+
+
+#productsCom h1
+	{
+	font-size:14pt;
+	font-family:arial;
+	color:#fff;
+	font-weight:bold;
+	
+	}
+
+#lMenuHead
+	{
+	 margin-top:6px;
+	 margine-left:3px;
+
+
+	}
+
+* html #productsCom
+	{
+	  margin:3px 0 0 -1px ;
+	}
+
+#theMenu
+	{
+	 background-color:#A5987A;
+	}
+
+
+.moduletablecontact
+	{
+	 text-align:center;
+
+	}
+
+
+.moduletablecontact table td
+	{
+	 text-align:center;
+
+	}
+
+.affImage
+	{
+	 float:left;
+	 width:148px
+
+	}
+
+.affContent
+	{
+	 float:left;width:285px
+
+	}
+
+
+
+.eventDate
+	{
+	 display:inline;
+	 font-family:arial;
+	 color:#000;
+	 font-size:9pt;
+	 padding-right:10px;
+	 font-weight:bold;
+
+	}
+.moduletableevents .eventDate
+	{
+	 font-size:10px;
+	 color:#fff;
+	 padding-right:3px;
+
+
+	}
+
+.moduletableevents .latest_event
+	{
+	 font-size:10px;
+	 color:#333;
+
+
+	}
+
+.contentpaneopen .latest_event
+
+	{
+	 list-style-type:none;
+	 font-size:10pt;
+	 padding:5px;
+	 color:#555;
+	 margin-left:0px;
+	 background-color:#fff;
+	 margin:0px 5px 5px 5px;
+
+	}
+
+.redHead
+	{
+	 font-family:arial;
+	 color:f00;
+	 font-size:11pt;
+	 font-weight:bold;
+
+	}
+
+#contactInfo a
+	{
+	 color:#f00;
+
+	}
+
+
+
+
+
+
+
+/* ######################  SHOP  ######################### */
+
+.mainlevelShop
+	{
+	 display:block;
+	 font-size:10pt;
+	 color:#FFEAA6;	
+	 font-weight:bold;
+	 
+	 border-bottom: dotted 2px #000;
+	 padding:5px 0 5px 0;
+	 width:90%;
+
+	}
+
+
+.sublevel
+	{
+	 color:#fff;
+	 font-size:9pt;
+	 font-weight:bold;
+	 padding:5px 2px 5px 0;
+
+
+
+	}
+
+#active_menu
+	{
+	 font-style:normal! important;
+	 color:#733;
+
+	}
+
+#contentProduct table td
+	{
+	 text-align:left;
+	 font-size:10pt;	
+	 color:#555;
+
+	}
+
+#contentProduct table td a
+	{
+	 font-size:10pt;
+	 color:#96846C;
+	 text-decoration:underline;
+	 font-weight:bold! important;
+	}
+
+
+#theOrderForm
+	{
+	visibility:hidden;
+	height:1px;
+	
+ 	padding:0;
+
+	}
+* html #theOrderForm
+	{
+	 margin:-10px;
+
+	}
+
+/*
+#theOrderForm img
+	{
+
+	visibility:hidden;
+	height:1px;
+	}
+
+*/
+
+#product_list a
+	{
+	 
+	 font-size:10pt;
+	 color:#A6947C;
+	 text-decoration:underline;
+	 font-weight:bold! important;
+
+
+	}
+
+.product_list a
+	{
+	 
+	 font-size:10pt;
+	 color:#700;
+	 text-decoration:underline;
+	 font-weight:bold! important;
+
+
+	}
+
+#productTitle
+	{
+	 color:#048ECF;
+	 font-weight:530;
+	 font-size:12pt;
+	 width:95%;
+	 border-bottom: 1px dotted #A6947C;
+
+	}
+
+
+productTitle a
+	{
+	 
+	 font-size:10pt! important;
+	 color:#A6947C;
+	 text-decoration:underline;
+	 font-weight:bold! important;
+
+
+	}
+
+.blueText
+	{
+	 color:#048ECF! important;
+	 font-weight:600! important;
+	 font-size:12pt! important;
+	 text-decoration:none! important;
+
+	}
+
+#pdfText
+	{
+	
+	 font-size:10pt;
+	 color:#A6947C;
+	 padding:0 5px 0 5px;
+	
+	}
+
+#vmSearchBox {
+  text-align: left;
+  background: #C3B392;
+  padding: 0px 0px 5px 5px;
+  width: 233px;
+  font-weight: bold;
+}
+#vmSearchBox FORM {
+  margin: 0;
+  padding: 0;
+}
+#vmSearchBox P {
+  margin: 0;
+}
+#vmSearchBox .inputbox {
+  width: 150px;
+}
+
+UL, OL {
+	margin: 0 0 0 0.6em;
+	padding: 0 0 0 0.6em;
+}

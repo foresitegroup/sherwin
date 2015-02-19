@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="template">
+	<name>sherwin</name>
+	<creationDate>6 15 2007</creationDate>
+	<author>Charles Bast</author>
+	<copyright>Remedi Creative </copyright>
+	<authorEmail>c.bast@remedicreative.com</authorEmail>
+	<authorUrl>http://www.remedicreative.com</authorUrl>
+	<version>1.0</version>
+	<description>CSS_template_for_Sherwin </description>
+
+	<files>
+		<filename>index.php</filename>
+		<filename>template_thumbnail.png</filename>
+	</files>
+
+	<images>
+		<filename>images/about.gif </filename>
+		<filename>images/affilliates.gif </filename>
+		<filename>images/blank.gif </filename>
+		<filename>images/consulting.gif </filename>
+		<filename>images/contact.gif </filename>
+		<filename>images/head.jpg </filename>
+		<filename>images/menu.jpg </filename>
+		<filename>images/newProducts.jpg </filename>
+		<filename>images/products.gif </filename>
+		<filename>images/seeUs.gif </filename>
+		<filename>images/seeUs.jpg </filename>
+		<filename>images/smallBanner.jpg </filename>
+		<filename>images/logoButton.swf </filename>
+		<filename>images/banner.swf </filename>
+	</images>
+	
+	<css>
+		<filename>css/template_css.css</filename>
+
+	</css>
+</mosinstall>

@@ -1,0 +1,15 @@
+<?xml version="1.5.1" encoding="iso-8859-1"?>
+<mosinstall type="mambot" group="search">
+	<name>JCal Pro Search mambot</name>
+	<author>Anything Digital</author>
+	<creationDate>03/20/2007</creationDate>
+	<copyright>2007 Anything Digital</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>admin@anything-digital.com</authorEmail>
+	<authorUrl>dev.anything-digital.com</authorUrl>
+	<version>1.5.1 Stable</version>
+	<description>Search mambot for JCal Pro</description>
+	<files>
+		<filename mambot="bot_jcalpro_search">bot_jcalpro_search.php</filename>
+	</files>
+</mosinstall>

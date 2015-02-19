@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="mambot" group="system">
+	<name>ARTIO JoomSEF MetaBot</name>
+	<author>ARTIO s.r.o.</author>
+	<creationDate>27. August 2007</creationDate>
+	<copyright>ARTIO s.r.o.</copyright>
+	<license>http://www.artio.net/en/joomsef/artio-joomsef-license-and-pricing</license>
+	<authorEmail>info@artio.net</authorEmail>
+	<authorUrl>www.artio.net</authorUrl>
+	<version>1.6.0</version>
+	<description>ARTIO JoomSEF MetaBot is used for generation of metatags managed by 
+	JoomSEF module.&lt;br /&gt;
+	&lt;strong&gt;Please note this mambot requires JoomSEF component installed to run.&lt;/strong&gt;</description>
+	<params>
+ 		<param name="prefer_joomsef_title" type="radio" default="1" label="Prefer JoomSEF titles:" description="Prefer page title created by JoomSEF or the Joomla one.">
+ 			<option value="1">Yes</option>
+ 			<option value="0">No</option>
+ 		</param>
+ 		<param name="use_sitename" type="list" default="2" label="Use sitename in page titles:" description="Defines how the sitename from global configuration is used in page titles.">
+ 			<option value="1">Yes - before page title</option>
+ 			<option value="2">Yes - after page title</option>
+ 			<option value="0">No</option>
+ 		</param> 		
+ 		<param name="sitename_sep" type="text" default="&amp;nbsp;-&amp;nbsp;" label="Sitename separator:" description="String used to separate page title and sitename." />
+ 		<param name="rewrite_keywords" type="radio" default="1" label="Rewrite keywords:" description="Rewrite existing Joomla! keywords with the ones defined in JoomSEF or append them?">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+ 		</param>
+		<param name="rewrite_description" type="radio" default="1" label="Rewrite description:" description="Rewrite existing Joomla! description with the one defined in JoomSEF or append it?">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+ 		</param>
+ 		<param name="rewrite_joomla" type="radio" default="0" label="Always append defaults:" description="Always append default meta description and keys, even if others have been specified in article (by default, Joomla appends it)?">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+ 		</param>
+ 		<param name="prevent_dupl" type="radio" default="1" label="Prevent sitename duplicity:" description="When sitename is same as pagename, prevent duplicity?">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+ 		</param>
+	</params>
+	<files>
+		<filename mambot="joomsef_metabot">joomsef_metabot.php</filename>
+	</files>
+</mosinstall>
