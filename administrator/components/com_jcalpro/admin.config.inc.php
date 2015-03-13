@@ -198,7 +198,8 @@ function get_fspath($fs_path) {
 	$fs_path=preg_split("/[\/\\\]/", dirname($fs_path));
 
 	// just in case $fs_path equals "//"
-	$fs_path = ereg_replace("//","/",join('/',$fs_path)."/");
+	// $fs_path = ereg_replace("//","/",join('/',$fs_path)."/");
+	$fs_path = preg_replace("/\/\//","/",join('/',$fs_path)."/");
 	return $fs_path;
 }
 
