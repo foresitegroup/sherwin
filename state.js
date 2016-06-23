@@ -58,8 +58,8 @@ wisconsin+="Fax: 920-894-4101<br />";
 wisconsin+="</p><p>";
 
 wisconsin+="<strong>Central/Western Wisconsin Sales Office</strong><br />";
-wisconsin+="Charlie Powers<br />";
-wisconsin+="<a href='mailTo:cpowers@sherwinindustries.com'>cpowers@sherwinindustries.com</a><br />";
+// wisconsin+="Charlie Powers<br />";
+// wisconsin+="<a href='mailTo:cpowers@sherwinindustries.com'>cpowers@sherwinindustries.com</a><br />";
 wisconsin+="Madison, WI<br />";
 wisconsin+="Office: 608-386-2288<br />";
 wisconsin+="Fax: 414-281-6404<br />";
@@ -84,13 +84,6 @@ wisconsin+="Jack and Dick's<br />";
 wisconsin+="975 S. Jackson St.<br />";
 wisconsin+="Janesville, Wisconsin 53545<br />";
 wisconsin+="Office: 608-752-3058<br />";
-wisconsin+="</p><p>";
-
-wisconsin+="Advance Sealcoating & Striping<br />";
-wisconsin+="201 South County Road Y<br />";
-wisconsin+="Hatley, WI  54440<br />";
-wisconsin+="Office: 715-454-6444<br />";
-wisconsin+="<a href='http://advancesealcoating.com' target='new'>advancesealcoating.com</a><br />";
 wisconsin+="</p>";
 
 wisconsin+=allState;
