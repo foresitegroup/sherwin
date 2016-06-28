@@ -60,8 +60,8 @@ wisconsin+="</p><p>";
 wisconsin+="<strong>Central/Western Wisconsin Sales Office</strong><br />";
 // wisconsin+="Charlie Powers<br />";
 // wisconsin+="<a href='mailTo:cpowers@sherwinindustries.com'>cpowers@sherwinindustries.com</a><br />";
-wisconsin+="Madison, WI<br />";
-wisconsin+="Office: 608-386-2288<br />";
+// wisconsin+="Madison, WI<br />";
+wisconsin+="Office: 414-281-6400<br />";
 wisconsin+="Fax: 414-281-6404<br />";
 wisconsin+="</p><p>";
 
