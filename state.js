@@ -33,7 +33,7 @@ var wisconsin="<p>";
 wisconsin+="<div class='redHead'>Wisconsin Sales Office</div>";
 wisconsin+="</p><p>";
 
-wisconsin+="<strong>Southeastern Wisconsin and Lower Michigan Sales Office</strong><br />";
+wisconsin+="<strong>Southern Wisconsin and Lower Michigan Sales Office</strong><br />";
 wisconsin+="Dan Morgan<br />";
 wisconsin+="<a href='mailTo:dmorgan@sherwinindustries.com'>dmorgan@sherwinindustries.com</a><br />";
 wisconsin+="Milwaukee, WI<br />";
@@ -57,13 +57,13 @@ wisconsin+="Office: 920-894-4184<br>";
 wisconsin+="Fax: 920-894-4101<br />";
 wisconsin+="</p><p>";
 
-wisconsin+="<strong>Central/Western Wisconsin Sales Office</strong><br />";
+//wisconsin+="<strong>Central/Western Wisconsin Sales Office</strong><br />";
 // wisconsin+="Charlie Powers<br />";
 // wisconsin+="<a href='mailTo:cpowers@sherwinindustries.com'>cpowers@sherwinindustries.com</a><br />";
 // wisconsin+="Madison, WI<br />";
-wisconsin+="Office: 414-281-6400<br />";
-wisconsin+="Fax: 414-281-6404<br />";
-wisconsin+="</p><p>";
+// wisconsin+="Office: 414-281-6400<br />";
+// wisconsin+="Fax: 414-281-6404<br />";
+//wisconsin+="</p><p>";
 
 wisconsin+="<div class='redHead'>Wisconsin Warehouses</div>";
 wisconsin+="</p><p>";
@@ -72,12 +72,6 @@ wisconsin+="Sherwin Industries, Inc<br />";
 wisconsin+="2129 W. Morgan Ave.<br />";
 wisconsin+="Milwaukee, WI 53221<br />";
 wisconsin+="Office: 414-281-6400 <br />";
-wisconsin+="</p><p>";
-
-wisconsin+="Austad and Son, Inc<br />";
-wisconsin+="905 Dempsey Rd.<br />";
-wisconsin+="Madison, Wisconsin 53714<br />";
-wisconsin+="Office: 608-661-4600<br />";
 wisconsin+="</p><p>";
 
 wisconsin+="Jack and Dick's<br />";
@@ -178,7 +172,7 @@ michigan+="Office: 920-894-4184<br />";
 michigan+="Fax: 920-894-4101<br />";
 michigan+="</p><p>";
 
-michigan+="<strong>Southeastern Wisconsin and Lower Michigan Sales Office</strong><br />";
+michigan+="<strong>Southern Wisconsin and Lower Michigan Sales Office</strong><br />";
 michigan+="Dan Morgan<br />";
 michigan+="<a href='mailTo:dmorgan@sherwinindustries.com'>dmorgan@sherwinindustries.com</a><br />";
 michigan+="Milwaukee, WI<br />";
